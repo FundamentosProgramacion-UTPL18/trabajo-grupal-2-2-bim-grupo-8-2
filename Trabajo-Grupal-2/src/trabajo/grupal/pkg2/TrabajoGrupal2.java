@@ -16,15 +16,15 @@ public class TrabajoGrupal2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        // Declaración de arreglos
         Estudiante[] estudiantes = new Estudiante[5];
         String nombres[] = {"José", "María", "Ana", "Paul", "David"};
         String apellidos[] = {"Yaguana", "Benitez", "Gaviria", "Davila", "Andrade"};
         int edad[] = {20, 19, 20, 19, 25};
         double calificacion_1[] = {9.1, 10, 8, 7, 9.1};
         double calificacion_2[] = {6.1, 5, 10, 7.2, 4.1};
-        double promedio[] = {0, 0, 0, 0, 0};
-        double suma = 0;
-        double promedio_final;
+        
+        //Ciclo FOR para llenar cada variable del objeto estudiante
         for (int i = 0; i < estudiantes.length; i++) {
             Estudiante estu = new Estudiante();
             estu.nombre = nombres[i];
@@ -34,6 +34,7 @@ public class TrabajoGrupal2 {
             estu.calificacion2 = calificacion_2[i];
             estudiantes[i] = estu;
         }
+        // Ciclo FOR para presentar los datos del objeto estudiante
         for (int i = 0; i < estudiantes.length; i++) {
             Estudiante estu = estudiantes[i];
             estu.presentar();
